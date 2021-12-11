@@ -1,0 +1,64 @@
+{% if request.user.is_authenticated %}
+<aside class="left-sidebar">
+    <!-- Sidebar scroll-->
+    <div class="scroll-sidebar">
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav">
+
+            <!-- {% if request.user.is_authenticated %} -->
+            <ul id="sidebarnav">
+                <li> <a class="waves-effect waves-dark" href="/" aria-expanded="false"><i
+                            class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
+                </li>
+                <br>
+                <!-- <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i
+                            class="mdi mdi-account-check"></i><span class="hide-menu">ESPACIOS CURRICULARES </span></a>
+                </li> -->
+                <li> <a class="text-center m-t-30">ESPACIOS CURRICULARES</a>
+                </li>
+                <br>
+                <li> <a class="waves-effect waves-dark" href="/sistemas-operativos.html" aria-expanded="false"><i
+                            class="mdi mdi-book-open-variant"></i><span class="hide-menu">Sistemas Operativos 2</span></a>
+                </li>
+                <li> <a class="waves-effect waves-dark" href="/comunicacion-redes.html" aria-expanded="false"><i
+                            class="mdi mdi-book-open-variant"></i><span class="hide-menu">Comunicación y Redes</span></a>
+                </li>
+                <li> <a class="waves-effect waves-dark" href="/page-blank.html" aria-expanded="false"><i
+                            class="mdi mdi-book-open-variant"></i><span class="hide-menu">Espacio Curricular 3</span></a>
+                </li>
+                <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i
+                            class="mdi mdi-book-open-variant"></i><span class="hide-menu">Espacio Curricular Default</span></a>
+                </li>
+                <!-- <li> <a class="waves-effect waves-dark" href="{% url 'logout' %}" aria-expanded="false"><i
+                            class="mdi mdi-power"></i><span class="hide-menu">Salir</span></a>
+                </li> -->
+            </ul>
+            <!-- {% endif %} -->
+
+            <!-- <div class="text-center m-t-30">
+                <a target="_blank"
+                   href="#"
+                    class="btn waves-effect waves-light btn-warning hidden-md-down">
+                    DEMO Version
+                </a>
+            </div> -->
+
+        </nav>
+        <!-- End Sidebar navigation -->
+    </div>
+    <!-- End Sidebar scroll-->
+
+    <!-- Bottom points-->
+    <div class="sidebar-footer">
+        <!-- {% if request.user.is_authenticated %} -->
+        <!-- item--><a href="/page-profile.html" class="link" data-toggle="tooltip" title="Settings"><i
+                class="ti-settings"></i></a>
+        <!-- item--><a href="/" class="link" data-toggle="tooltip" title="Email"><i
+                class="mdi mdi-gmail"></i></a>
+        <!-- item--><a href="{% url 'logout' %}" class="link" data-toggle="tooltip" title="Logout"><i
+                class="mdi mdi-power"></i></a> 
+        <!-- {% endif %} -->
+    </div> 
+    <!-- End Bottom points-->
+</aside>
+{% endif %}

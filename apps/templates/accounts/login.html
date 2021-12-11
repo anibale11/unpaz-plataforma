@@ -1,0 +1,96 @@
+
+{% extends "layouts/base.html" %}
+
+{% block title %} Login {% endblock %}
+
+<!-- Plugins CSS goes HERE  -->
+{% block plugin_stylesheets %}{% endblock plugin_stylesheets %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="container-fluid">
+
+        <!-- ============================================================== -->
+        <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="row page-titles">
+            <div class="col-md-5 col-8 align-self-center">
+                <h3 class="text-themecolor m-b-0 m-t-0">
+                    <a target="_blank" href="#">Version DEMO de Plataforma de Contenidos</a> - Login
+                </h3>
+                <br />
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        {% if msg %}
+                            {{ msg | safe }}
+                        {% else %}
+                            Ingrese sus Credenciales
+                        {% endif %}
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-7 col-4 align-self-center">
+              <a target="_blank"
+                 href="#"
+                  class="btn waves-effect waves-light btn-danger pull-right hidden-sm-down">
+                  DEMO Version
+              </a>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+        <!-- Row -->
+        <div class="row">
+
+            <!-- Column -->
+            <div class="col-lg-8 col-xlg-9 col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-block">
+
+                        <form method="post" action="" class="form-horizontal form-material">
+
+                            {% csrf_token %}
+
+                            <div class="form-group">
+                                <label class="col-md-12">Usuario</label>
+                                <div class="col-md-12">
+                                    {{ form.username }}
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-12">Contraseña</label>
+                                <div class="col-md-12">
+                                    {{ form.password }}
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <button type="submit" name="login" class="btn btn-success">Login</button>
+                                    &nbsp;&nbsp; No tienes una Cuenta? <a href="{% url 'register' %}">Registrarse</a>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+        </div>
+        <!-- Row -->
+        <!-- ============================================================== -->
+        <!-- End PAge Content -->
+        <!-- ============================================================== -->
+    </div>
+
+{% endblock content %}
+
+{% block javascripts %}{% endblock javascripts %}

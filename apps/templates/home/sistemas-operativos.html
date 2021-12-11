@@ -1,0 +1,168 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Sistemas Operativos II {% endblock %}
+
+<!-- Plugins CSS goes HERE  -->
+{% block plugin_stylesheets %}{% endblock plugin_stylesheets %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="container-fluid">
+        <!-- ============================================================== -->
+        <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="row page-titles">
+            <div class="col-md-5 col-8 align-self-center">
+                <h3 class="text-themecolor m-b-0 m-t-0">Dashboard</h3>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                    <li class="breadcrumb-item active">Sistemas Operativos II</li>
+                </ol>
+            </div>
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+        <div class="row">
+            <!-- Column -->
+            <div class="col-lg-8 col-md-7">
+                <div class="card">
+                    <div class="card-block">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex flex-wrap">
+                                    <div>
+                                        <h3 class="card-title">Actividades</h3>
+                                        <!-- <h6 class="card-subtitle"></h6> -->
+                                      <ul class="list-inline">
+                                          <li>
+                                              <h6 class="text-muted text-info"><i
+                                                      class="fa fa-circle font-10 m-r-10 "></i>
+                                                      1. Cambiar su contraseña. Esta debe tener diez 10 dígitos y utilizar mayúsculas minúsculas números y
+              caracteres especiales. Deberá recordarla en todo momento.</h6>
+                                          </li>
+                                          <li>
+                                              <h6 class="text-muted  text-info"><i
+                                                      class="fa fa-circle font-10 m-r-10"></i>2. Crear una carpeta llamada “principal” y dentro de esta una
+                                                      llamada “subcarpeta”</h6>
+                                          </li>
+                                          <li>
+                                              <h6 class="text-muted  text-info"><i
+                                                      class="fa fa-circle font-10 m-r-10"></i>
+                                                      3. Crear un archivo llamado “comandos.txt” utilizando
+                                                      “nano” </h6>
+                                          </li>
+                                          <li>
+                                              <h6 class="text-muted  text-info"><i
+                                                      class="fa fa-circle font-10 m-r-10"></i>4. Copiar el archivo anterior con otro nombre en la carpeta /principal.</h6>
+                                          </li>
+                                          <li>
+                                              <h6 class="text-muted  text-info"><i
+                                                      class="fa fa-circle font-10 m-r-10"></i>
+                                                      5. Cambiar el nombre del archivo “comandos.txt” a “tp1.txt”</h6>
+                                          </li>
+                                          <li>
+                                              <h6 class="text-muted  text-info"><i
+                                                      class="fa fa-circle font-10 m-r-10"></i>6. Listar los directorios y buscar archivos que contengan la palabra sistema operativo, sistemas,
+                                                      sistema y System, informando cuantos encuentra que contengan estos nombres.</h6>
+                                          </li>
+                                          <li>
+                                              <h6 class="text-muted  text-info"><i
+                                                      class="fa fa-circle font-10 m-r-10"></i>
+                                                      7. Agregar un usuario con adduser y otro con useradd, comentar las diferencias observadas. </h6>
+                                          </li>
+                                          <li>
+                                              <h6 class="text-muted  text-info"><i
+                                                      class="fa fa-circle font-10 m-r-10"></i>
+                                                      8. Crear nuevo usuario llamado SO2UNPAZ y asignarle contraseña. Registrar con una captura.</h6>
+                                          </li>
+                                          <li>
+                                              <h6 class="text-muted  text-info"><i
+                                                      class="fa fa-circle font-10 m-r-10"></i>9. Eliminar el usuario recién creado con comando userdel</h6>
+                                          </li>
+                                          <li>
+                                              <h6 class="text-muted  text-info"><i
+                                                      class="fa fa-circle font-10 m-r-10"></i>
+                                                      10. Enviar las capturas solicitadas insertadas en archivo Word para su evaluación, junto a descripción
+                                                      de la acción de cada comando utilizado. </h6>
+                                          </li>
+                                          <li>
+                                              <h6 class="text-muted  text-info"><i
+                                                      class="fa fa-circle font-10 m-r-10"></i>
+                                                      11. Enviar las capturas solicitadas en archivo Word adjunto por correo a: so2.unpaz@gmail.com </h6>
+                                          </li>
+                                      </ul>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <!-- <ul class="list-inline">
+                                            <li>
+                                                <h6 class="text-muted text-success"><i
+                                                        class="fa fa-circle font-10 m-r-10 "></i>Ample</h6>
+                                            </li>
+                                            <li>
+                                                <h6 class="text-muted  text-info"><i
+                                                        class="fa fa-circle font-10 m-r-10"></i>Pixel</h6>
+                                            </li>
+                                        </ul> -->
+                                        <!-- <p>1. Conectarse a la primer actividades</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="amp-pxl" style="height: 360px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-5">
+                <div class="card">
+                    <div class="card-block">
+                      <div class="col-md-7 col-4 align-self-center">
+                          <a target="_blank"
+                             href="http://51.222.111.177:4000/wetty"
+                              class="btn waves-effect waves-light btn-info pull-right hidden-sm-down">
+                              Abrir Terminal
+                          </a>
+                      </div>
+                        <!-- <h3 class="card-title">Visto Por </h3>
+                        <h6 class="card-subtitle">Listado de Visitantes</h6>
+                        <div id="visitor" style="height:290px; width:100%;"></div> -->
+                    </div>
+                    <div>
+                        <hr class="m-t-0 m-b-0">
+                    </div>
+                    <!-- <div class="card-block text-center ">
+                        <ul class="list-inline m-b-0">
+                            <li>
+                                <h6 class="text-muted text-info"><i
+                                        class="fa fa-circle font-10 m-r-10 "></i>Mobile</h6>
+                            </li>
+                            <li>
+                                <h6 class="text-muted  text-primary"><i
+                                        class="fa fa-circle font-10 m-r-10"></i>Desktop</h6>
+                            </li>
+                            <li>
+                                <h6 class="text-muted  text-success"><i
+                                        class="fa fa-circle font-10 m-r-10"></i>Tablet</h6>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End PAge Content -->
+        <!-- ============================================================== -->
+    </div>
+
+{% endblock content %}
+
+{% block javascripts %}{% endblock javascripts %}
