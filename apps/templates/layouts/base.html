@@ -15,13 +15,15 @@
     <meta name="robots" content="noindex,nofollow">
 
     <title>
-        Demo Plataforma - {% block title %}{% endblock %} | UnPaz
+        Plataforma Educativa de Contenidos Prácticos. LGTI - {% block title %}{% endblock %} | UnPaz
     </title>
 
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/images/favicon.png">
     <!-- Bootstrap Core CSS -->
     <link type="text/css" href="/static/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/assets/scss/icons/material-design-iconic-font/css/materialdesignicons.min.css" rel="stylesheet">
+
 
     <!-- Plugins CSS goes HERE  -->
     {% block plugin_stylesheets %}{% endblock plugin_stylesheets %}
@@ -58,8 +60,8 @@
 
         {% include 'includes/sidebar.html' %}
 
-        
-        <div 
+
+        <div
         {% if request.user.is_authenticated %}
             class="page-wrapper"
         {% endif %}>
@@ -69,7 +71,7 @@
             {% include 'includes/footer.html' %}
 
         </div>
-        
+
     </div>
 
     {% include 'includes/scripts.html' %}
@@ -79,6 +81,3 @@
 
 </body>
 </html>
-
-
-
